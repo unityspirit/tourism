@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="WANDERLUXE Travel — Premium travel and tourism agency. Cultural expeditions, adventure tours, luxury getaways, and private tours. Discover the world, your way." />
+  <title>WANDERLUXE — Premium Travel & Tourism Experiences</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <canvas id="gl-canvas"></canvas>
+  <canvas id="particle-canvas"></canvas>
+  <div class="grain-overlay"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" data-scroll="0">
+        <img src="images/logo.png" alt="WANDERLUXE Logo" class="logo-img" />
+        <span class="logo-text">WANDER<span class="logo-accent">LUXE</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#" data-scroll="1" class="nav-link">Tours</a></li>
+        <li><a href="#" data-scroll="2" class="nav-link">Destinations</a></li>
+        <li><a href="#" data-scroll="3" class="nav-link">How It Works</a></li>
+        <li><a href="#" data-scroll="4" class="nav-link">About</a></li>
+        <li><a href="#" data-scroll="5" class="nav-link nav-cta">Plan Trip</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="nav-scrim" id="nav-scrim" hidden></div>
+  <div class="nav-drawer" id="nav-drawer" hidden>
+    <button class="drawer-close" id="drawer-close" aria-label="Close">✕</button>
+    <ul class="drawer-links" id="drawer-links">
+      <li><a href="#" data-scroll="1" class="drawer-link">Tours</a></li>
+      <li><a href="#" data-scroll="2" class="drawer-link">Destinations</a></li>
+      <li><a href="#" data-scroll="3" class="drawer-link">How It Works</a></li>
+      <li><a href="#" data-scroll="4" class="drawer-link">About</a></li>
+      <li><a href="#" data-scroll="5" class="drawer-link">Plan Trip</a></li>
+    </ul>
+    <div class="drawer-contacts">
+      <a href="mailto:hello@wanderluxetravel.com" class="drawer-social">Email Us</a>
+      <a href="https://instagram.com" target="_blank" class="drawer-social">Instagram</a>
+    </div>
+  </div>
+
+  <div id="ui-layer">
+    <div class="stage">
+
+      <section class="page is-active" data-index="0" id="hero">
+        <div class="page-inner hero-inner">
+          <img src="images/logo.png" alt="WANDERLUXE" class="hero-logo reveal-3d">
+          <div class="hero-badge reveal-3d">Luxury Travel Experiences</div>
+          <h1 class="hero-title reveal-3d"><span class="gradient-text">WANDERLUXE</span></h1>
+          <p class="hero-subtitle reveal-3d">Discover the world, your way.<br>Curated journeys for the discerning traveler.</p>
+          <div class="hero-cta-group reveal-3d">
+            <a href="#" data-scroll="1" class="btn-primary">Explore Tours</a>
+            <a href="#" data-scroll="5" class="btn-outline">Plan Your Trip</a>
+          </div>
+          <div class="hero-scroll-hint"><div class="scroll-line"></div><span>scroll</span></div>
+        </div>
+      </section>
+
+      <section class="page" data-index="1" id="services">
+        <div class="page-inner">
+          <div class="section-badge reveal-3d">Our Experiences</div>
+          <h2 class="section-title reveal-3d">Extraordinary<br><span class="gradient-text">Travel Experiences</span></h2>
+          <p class="section-desc reveal-3d">From cultural immersions to adrenaline adventures — your journey awaits</p>
+          <div class="services-grid reveal-3d">
+            <div class="service-card"><div class="service-icon">🏛️</div><h3>Cultural Expeditions</h3><p>Immerse yourself in ancient civilizations and living traditions. Expert-guided tours through historic capitals, museums, and UNESCO heritage sites.</p></div>
+            <div class="service-card"><div class="service-icon">⛰️</div><h3>Adventure Tours</h3><p>Push your boundaries with carefully crafted adventure itineraries. Mountain treks, jungle expeditions, and extreme sports with safety-first guides.</p></div>
+            <div class="service-card"><div class="service-icon">🌟</div><h3>Luxury Getaways</h3><p>Five-star resorts, private villas, and exclusive island retreats. Indulgence redefined with bespoke hospitality.</p></div>
+            <div class="service-card"><div class="service-icon">🏙️</div><h3>City Breaks</h3><p>Explore the world's most vibrant metropolises. Curated itineraries featuring hidden gems, Michelin dining, and cultural hotspots.</p></div>
+            <div class="service-card"><div class="service-icon">🌿</div><h3>Nature Escapes</h3><p>Reconnect with the natural world. Safari drives, rainforest lodges, and coastal retreats in pristine wilderness.</p></div>
+            <div class="service-card"><div class="service-icon">🎭</div><h3>Private Tours</h3><p>Exclusively yours. Custom-designed itineraries with private guides, luxury transport, and VIP access to attractions.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" data-index="2" id="collections">
+        <div class="page-inner">
+          <div class="section-badge reveal-3d">Popular Destinations</div>
+          <h2 class="section-title reveal-3d">Handpicked<br><span class="gradient-text">Destinations</span></h2>
+          <p class="section-desc reveal-3d">The world's most captivating places, curated for unforgettable experiences.</p>
+          <div class="collections-grid reveal-3d">
+            <div class="collection-card card-large">
+              <div class="collection-overlay">
+                <span class="collection-label">Europe · Mediterranean</span>
+                <h3>Mediterranean Dream</h3>
+                <p>Sun-drenched coastlines, ancient ruins, and world-class cuisine. From the Amalfi Coast to the Greek Islands.</p>
+              </div>
+            </div>
+            <div class="collection-card card-medium">
+              <div class="collection-overlay">
+                <span class="collection-label">Global Reach</span>
+                <h3>50+</h3>
+                <p>Destinations across 6 continents, each personally vetted by our travel experts</p>
+              </div>
+            </div>
+            <div class="collection-card card-medium">
+              <div class="collection-overlay">
+                <span class="collection-label">Traveler Rating</span>
+                <h3>4.9★</h3>
+                <p>Average rating from 2,000+ travelers who've journeyed with us</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" data-index="3" id="production">
+        <div class="page-inner">
+          <div class="section-badge reveal-3d">How It Works</div>
+          <h2 class="section-title reveal-3d">Your<br><span class="gradient-text">Booking Journey</span></h2>
+          <p class="section-desc reveal-3d">From inspiration to destination — we handle every detail</p>
+          <div class="production-layout reveal-3d">
+            <div class="production-stats">
+              <div class="stat-card"><span class="stat-number">10+</span><span class="stat-label">years of expertise</span></div>
+              <div class="stat-card"><span class="stat-number">50+</span><span class="stat-label">destinations worldwide</span></div>
+              <div class="stat-card"><span class="stat-number">5,000+</span><span class="stat-label">happy travelers</span></div>
+              <div class="stat-card"><span class="stat-number">99%</span><span class="stat-label">on-time delivery</span></div>
+              <div class="production-steps">
+                <div class="prod-step"><span class="step-num">01</span><span class="step-text">Dream consultation & destination matching</span></div>
+                <div class="prod-step"><span class="step-num">02</span><span class="step-text">Custom itinerary design & accommodation selection</span></div>
+                <div class="prod-step"><span class="step-num">03</span><span class="step-text">Booking confirmation & travel documentation</span></div>
+                <div class="prod-step"><span class="step-num">04</span><span class="step-text">Pre-departure briefing & local contacts</span></div>
+                <div class="prod-step"><span class="step-num">05</span><span class="step-text">24/7 on-trip support & post-travel follow-up</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" data-index="4" id="about">
+        <div class="page-inner">
+          <div class="section-badge reveal-3d">About Us</div>
+          <h2 class="section-title reveal-3d">Why Choose<br><span class="gradient-text">WANDERLUXE</span></h2>
+          <p class="section-desc reveal-3d">Travel is not just a trip — it's a transformation</p>
+          <div class="about-grid reveal-3d">
+            <div class="about-card"><div class="about-icon">🌍</div><h3>Local Expertise</h3><p>In-country specialists and local guides who know every hidden gem. Authentic experiences you won't find in guidebooks.</p></div>
+            <div class="about-card"><div class="about-icon">✨</div><h3>Bespoke Itineraries</h3><p>No two trips are alike. Every journey custom-crafted to match your interests, pace, and travel style.</p></div>
+            <div class="about-card"><div class="about-icon">🛡️</div><h3>Worry-Free Travel</h3><p>Comprehensive travel insurance, 24/7 emergency support, and flexible rebooking policies. Travel with complete peace of mind.</p></div>
+            <div class="about-card"><div class="about-icon">💎</div><h3>VIP Treatment</h3><p>Priority access, private transfers, exclusive dining reservations, and surprise upgrades. The luxury touches that make the difference.</p></div>
+          </div>
+          <div class="about-cta reveal-3d">
+            <a href="#" data-scroll="5" class="btn-primary">Plan Your Trip</a>
+            <a href="https://instagram.com" target="_blank" class="btn-outline">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" data-index="5" id="contact">
+        <div class="page-inner">
+          <div class="section-badge reveal-3d">Start Your Journey</div>
+          <h2 class="section-title reveal-3d">Let's Plan Your<br><span class="gradient-text">Next Adventure</span></h2>
+          <p class="section-desc reveal-3d">Speak with our travel experts — your dream trip is just a conversation away</p>
+          <div class="contact-layout reveal-3d" style="display:flex;justify-content:center;">
+            <div class="contact-info-card">
+              <h3>Contact Us</h3>
+              <div class="contact-item"><span class="contact-icon">📧</span><div><strong>Email</strong><a href="mailto:hello@wanderluxetravel.com">hello@wanderluxetravel.com</a></div></div>
+              <div class="contact-item"><span class="contact-icon">📞</span><div><strong>Phone</strong><a href="tel:+15559876543">+1 (555) 987-6543</a></div></div>
+              <div class="contact-item"><span class="contact-icon">📍</span><div><strong>Address</strong><span>200 Park Avenue, Suite 1800, New York, NY 10166</span></div></div>
+              <div class="contact-item"><span class="contact-icon">⏰</span><div><strong>Hours</strong><span>Mon–Fri: 9:00 AM – 7:00 PM | Sat: 10:00 AM – 4:00 PM</span></div></div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer-inner">
+            <span class="footer-logo">WANDERLUXE</span>
+            <span class="footer-copy">© 2025 WANDERLUXE Travel. Discover the World, Your Way.</span>
+            <div class="footer-socials"><a href="https://instagram.com" target="_blank">IG</a><a href="https://twitter.com" target="_blank">TW</a></div>
+          </div>
+        </footer>
+      </section>
+
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
